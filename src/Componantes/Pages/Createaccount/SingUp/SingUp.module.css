@@ -1,0 +1,124 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;  
+}
+
+.container{
+    width:40vw;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    align-items: center;
+    border-radius: 15px;
+    height: 85vh;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+
+.box .close{
+    margin: 1em;
+    
+}
+
+.twittericon {
+    margin: 1em ;
+    padding-left: 40%;
+}
+.container h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 1rem;
+}
+
+.google , .Apple{
+    background-color:aliceblue;
+    margin: 1rem;
+    padding: 10px;
+    border-radius: 1.5pc;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.google p{
+    padding-left: 10px;
+}
+
+.Apple p{
+    padding-right: 10px;
+}
+
+.Or{
+    background: #fff;
+    width: 300px;
+    margin: 10px;
+}
+
+.Or hr{
+    border: 0;
+    height: 1px;
+    background: #c2c2c2;
+    margin: 5px;
+}
+
+.Or span{
+    display: block;
+    width: 40px;
+    margin: auto;
+    background-color: #fff;
+    font-size: 14px;
+    margin-top: -16px;
+}
+
+
+.Creating{
+    width: 300px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 1.5pc;
+    margin: 5px;
+    color: white;
+}
+
+.terms{
+    width:300px;
+    text-align: justify;
+    font-size: 14px;
+    margin-top: 2px;
+    margin-bottom: 40px;
+    color: rgb(94, 94, 94);
+}
+
+.blue{
+    color: #00ACEE;
+}
+
+.footer{
+    width: 300px;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+

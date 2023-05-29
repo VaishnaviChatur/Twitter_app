@@ -1,0 +1,116 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #3e65fe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+   /* margin-top: 5em; */
+   height: 70%;
+
+}
+
+.Logobox{
+    width:40vw;
+    height: 90vh;
+
+    /* margin: auto; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    align-items: center;
+    border-radius: 15px;
+   
+}
+.close{
+   display: flex;
+   width: 100%;
+  color: blue;
+   padding: 10px;
+
+}
+
+.twitterLogo{
+    width: 30px;
+    margin-bottom: 20px;
+    margin-left: 300px;
+    /* padding-left: 40px; */
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    margin-bottom: 20px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* margin: 1rem; */
+}
+
+button{
+    width: 300px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 1px solid #999;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+.Googlelogo {
+    width: 18px;
+    margin-right: 10px;
+}
+
+span{
+    display: block;
+    width: 40px;
+    margin: auto;
+    margin-top: -16px;
+    font-size: 14px;
+    background: #fff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.NextButton{
+    background-color: black;
+    color : white;
+}
+.footer{
+    text-align: center;
+}
+.footer a{
+    color: blue;
+}
+.Or{
+    background: #fff;
+    width: 300px;
+    margin: 10px;
+}
+
+.Or hr{
+    border: 0;
+    height: 1px;
+    background: #c2c2c2;
+    margin: 5px;
+}
+
+.Or span{
+    display: block;
+    width: 40px;
+    margin: auto;
+    background-color: #fff;
+    font-size: 14px;
+    margin-top: -16px;
+}
