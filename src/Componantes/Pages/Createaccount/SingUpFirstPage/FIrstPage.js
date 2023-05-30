@@ -10,37 +10,40 @@ import Box from "@mui/material/Box";
 
 
 const Custemize = () => {
-  const [details , setDetails] = useState([])
-const[name, setName] = useState("")
-const[phone, setPhone] = useState("")
-const[email, setEmail] = useState("")
-const[dob, setDob] = useState("")
-const[password, setpassword] = useState("")
-const[isValid , setIsVaild] = useState(false)
+
+  const [details , setDetails] = useState(JSON.parse(localStorage.getItem('details')) || [])
+
+  const[name, setName] = useState("")
+  const[phone, setPhone] = useState("")
+  const[email, setEmail] = useState("")
+  const[dob, setDob] = useState("")
+  const[password, setpassword] = useState("")
+  const[isValid , setIsVaild] = useState(false)
+ 
 
 const HandleClick = () => {
-  const OldDetails = [...details]
-  const newdetail = {
+  const OldDetails = [...details, {
     name : name,
     phone : phone,
     email: email,
     dob : dob,
     password: password
 
-  }
+  }]
 
-  const newDetails = OldDetails.concat(newdetail)
+  
   if(name == "" || phone == "" || email == "" || dob == "" || password == ""){
-    // alert("Fields cannt be blank")
     setIsVaild(true)
   } else {
-    setDetails(newDetails);
+    localStorage.setItem("details",JSON.stringify(OldDetails));
+    console.log(OldDetails)
+    setDetails(OldDetails);
     setIsVaild(false)
   }
 
 
 
-  setDetails(newDetails);
+  setDetails(OldDetails);
   setName("")
   setPhone("")
   setEmail("")
@@ -49,10 +52,10 @@ const HandleClick = () => {
   
 
 
-  localStorage.setItem("details",JSON.stringify(newDetails));
+ 
 
 }
-
+console.log(details)
 
   return (
     <>
@@ -121,8 +124,8 @@ const HandleClick = () => {
 
 <TextField
               id="filled-basic"
-              type="passwoed"
-              label="passwoed"
+              type="password"
+              label="password"
               variant="filled"
               onChange={e => setpassword(e.target.value)}
               fullWidth

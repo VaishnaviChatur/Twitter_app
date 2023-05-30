@@ -39,13 +39,13 @@ const SecondPage = () => {
         <br />
         <br />
         <div className={styles.pwd}>
-        <TextField id="filled-basic" 
+        {/* <TextField id="filled-basic" 
      label="Password" 
      variant="filled" 
    
         fullWidth
         />
-         <Link>Forgot password?</Link>
+         <Link>Forgot password?</Link> */}
          </div>
     
         <button className={styles.NextBtn}><Link to = '/' className={styles.subbtn}>Submit</Link></button>
