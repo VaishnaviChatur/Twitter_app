@@ -55,7 +55,7 @@ h2{
 }
 
 .btn{
-    width: 300px;
+    width: 400px;
     padding: 10px 0;
     display: flex;
     align-items: center;
@@ -66,10 +66,13 @@ h2{
     border: 1px solid #999;
     font-weight: 500;
     cursor: pointer;
+    background-color: black;
+    color: white;
+   
 
 }
-button .btn{
-
+.logbtn{
+    color: white;
 }
 .Googlelogo {
     width: 18px;
@@ -116,4 +119,8 @@ span{
     background-color: #fff;
     font-size: 14px;
     margin-top: -16px;
+}
+
+.downbtn{
+    margin-top: 400px;
 }

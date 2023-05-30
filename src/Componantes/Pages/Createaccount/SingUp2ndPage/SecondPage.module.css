@@ -6,13 +6,16 @@ body {
 .Logobox {
     background-color: white;
     padding: 0px 70px;
-    width: 450px;
-    height: 610px;
+    width:40vw;
+    height: 90vh;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
+}
+.subbtn{
+    color: white;
 }
 
 h1 {
@@ -49,7 +52,7 @@ span {
     margin-bottom: 0%;
 }
 
-.flex-box {
+.flexbox {
     display: flex;
     justify-content: space-around;
 }

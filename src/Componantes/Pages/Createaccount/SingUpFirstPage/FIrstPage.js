@@ -1,6 +1,6 @@
 //step1
 import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank";
-import React from "react";
+import React, { useState } from 'react'
 import styles from './FirstPage.module.css'
 import {Link} from 'react-router-dom'
 
@@ -10,6 +10,49 @@ import Box from "@mui/material/Box";
 
 
 const Custemize = () => {
+  const [details , setDetails] = useState([])
+const[name, setName] = useState("")
+const[phone, setPhone] = useState("")
+const[email, setEmail] = useState("")
+const[dob, setDob] = useState("")
+const[password, setpassword] = useState("")
+const[isValid , setIsVaild] = useState(false)
+
+const HandleClick = () => {
+  const OldDetails = [...details]
+  const newdetail = {
+    name : name,
+    phone : phone,
+    email: email,
+    dob : dob,
+    password: password
+
+  }
+
+  const newDetails = OldDetails.concat(newdetail)
+  if(name == "" || phone == "" || email == "" || dob == "" || password == ""){
+    // alert("Fields cannt be blank")
+    setIsVaild(true)
+  } else {
+    setDetails(newDetails);
+    setIsVaild(false)
+  }
+
+
+
+  setDetails(newDetails);
+  setName("")
+  setPhone("")
+  setEmail("")
+  setDob("")
+  setpassword("")
+  
+
+
+  localStorage.setItem("details",JSON.stringify(newDetails));
+
+}
+
 
   return (
     <>
@@ -19,7 +62,7 @@ const Custemize = () => {
             {" "}
             <ArrowBackIcon className={styles.arrowLogo} />
           </p>
-          <h2>Step 1 of 5</h2>
+          {/* <h2>Step 1 of 5</h2> */}
         </header>
         
         <h1>Create your account</h1>
@@ -43,7 +86,9 @@ const Custemize = () => {
               type="text"
               label="name"
               variant="filled"
+              onChange={e => setName(e.target.value)}
               fullWidth
+              error={isValid}
             //   required
             />
           </p>
@@ -55,11 +100,36 @@ const Custemize = () => {
               label="Phone"
               variant="filled"
               pattern="[0-9]"
+              onChange={e => setPhone(e.target.value)}
+              // ref={name}
               fullWidth
+              error={isValid}
             //   required
             />
           </p>
-         
+          <p>
+          <TextField
+              id="filled-basic"
+              type="email"
+              label="Email"
+              variant="filled"
+              onChange={e => setEmail(e.target.value)}
+              fullWidth
+              error={isValid}
+            //   required
+            />
+
+<TextField
+              id="filled-basic"
+              type="passwoed"
+              label="passwoed"
+              variant="filled"
+              onChange={e => setpassword(e.target.value)}
+              fullWidth
+              error={isValid}
+            //   required
+            />
+          </p>
         
          
         </Box>
@@ -91,10 +161,13 @@ const Custemize = () => {
               variant="filled"
               fullWidth
               required
+              onChange={e => setDob(e.target.value)}
+              error={isValid}
             />
           </p>
+          
         </Box>
-        <button className={styles.NextBtn}> <Link to='/secondPage'>Next</Link></button>
+        <button className={styles.NextBtn} onClick={HandleClick}> <Link to='/secondPage' className={styles.NextButton}>Next</Link></button>
       </div>
     </>
   );

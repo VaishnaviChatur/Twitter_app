@@ -85,7 +85,10 @@ body{
     font-size: 14px;
     margin-top: -16px;
 }
-
+.createButton{
+    color: white;
+    text-decoration: none;
+}
 
 .Creating{
     width: 300px;
@@ -97,21 +100,26 @@ body{
 }
 
 .terms{
-    width:300px;
+    width:400px;
+    /* border: 1px solid red; */
     text-align: justify;
-    font-size: 14px;
-    margin-top: 2px;
+    padding: 20px;
+
+    font-size: 10px;
+    /* margin-top: 2px; */
     margin-bottom: 40px;
     color: rgb(94, 94, 94);
 }
 
 .blue{
     color: #00ACEE;
+    padding: 5px;
 }
 
 .footer{
     width: 300px;
     text-align: left;
+    display: flex;
 }
 
 

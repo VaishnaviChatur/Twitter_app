@@ -34,14 +34,14 @@ const SignUp = () => {
         <span className={styles.Orspan}>Or</span>
         </div>
         <button className={styles.Creating}>
-           <Link to= '/createaccount '>  Create account </Link>
+           <Link to= '/createaccount' className={styles.createButton}>  Create account </Link>
         </button>
         <div className={styles.terms}>
-        <p>By signing up,you agree to the <span className={styles.blue}>Terms of Service</span></p>
-        <p>and <span className={styles.blue}>Privacy Policy</span>, including <span className='blue'>Cookie Use.</span></p>
+        <p>By signing up,you agree to the <Link className={styles.blue}>Terms of Service</Link></p>
+        <p>and <Link className={styles.blue}>Privacy Policy</Link>, including <Link className={styles.blue}>Cookie Use.</Link></p>
         </div>
         <div className={styles.footer}>
-        <p>Have an account already? <span className={styles.blue}><Link to= '/singin'> Login </Link></span></p>
+        <p>Have an account already? <Link to= '/singin' className={styles.blue}> Login </Link></p>
         </div>
         
     </div>
