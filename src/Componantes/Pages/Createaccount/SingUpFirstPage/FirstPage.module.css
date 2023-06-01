@@ -1,78 +1,53 @@
-body {
-    background-color: #1e2332;
-}
 
-.Logobox {
+
+  .main {
     background-color: white;
-    padding: 0px 70px;
+    /* padding: 0px 70px; */
     width:40vw;
     height: 90vh;
     position: absolute;
+    text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
 }
-
-h1 {
-    margin-bottom: 20px;
+.card{
+    margin: 10% 20%;    
 }
 
-button {
-    width: 100%;
-    padding: 10px 0;
+.input{
+    width: 25vw !important;
+    margin-bottom: 10px !important;
+    padding: 1px !important;
+    background-color: aliceblue !important;
+}
+.Calender{
+    /* border: 1px solid; */
+    height: 2rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0px;
-    border-radius: 30px;
-    background-color: transparent;
-    border: 1px solid #999;
-    font-weight: 500;
-    cursor: pointer;
-}
-.NextButton{
-    color: white;
-    text-decoration: none;
-}
-
-span {
-    display: block;
-    width: 40px;
+    gap: 20px;
+    /* justify-content: space-between !important; */
+    width: 80%;
     margin: auto;
-    margin-top: -16px;
-    font-size: 14px;
-    background: #fff;
-    text-align: center;
-}
+    
+ }
 
-.NextBtn {
-    background-color: black;
-    color: white;
-    margin-bottom: 0%;
-}
-
-.flexbox {
-    display: flex;
-    justify-content: space-around;
-}
-
-.alink {
-    color: blue;
+ .Calender > select{
+    width:50% ;
+    height: 100%;
+ }
+ .btn{
+    border-radius: 20px !important;
+    width: 25vw;
+    background-color: blue;
+  
+    text-transform: none !important;
+    /* background-color: rgb(255, 255, 255) !important; */
+    color: white !important;
+    font-size: 5px !important;
+ }
+ .btn1{
+    color: white !important;
     text-decoration: none;
-}
-
-.header {
-    margin-top: 0%;
-    display: flex;
-}
-
-.arrowLogo {
-    color: blue;
-    font-size: 10%;
-    padding: 10px;
-    width: 20%;
-    height: 20%;
-
-    /* margin-top: 0px; */
-}
+ }

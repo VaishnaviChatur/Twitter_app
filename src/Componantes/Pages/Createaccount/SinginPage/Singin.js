@@ -9,39 +9,35 @@ import { FcGoogle } from "react-icons/fc";
 import AppleIcon from '@mui/icons-material/Apple';
 import {Link} from 'react-router-dom'
 const Singin = () => {
-    const[value, setValue] = useState([])    // to manage/store localStorage value
-    const[singin , setSingin] = useState([])  
     const[name, setName] = useState([])  
-    const[email, setEmail] = useState([])
-    const[phone, setPhone] = useState([])
+    const[password , setpassword] = useState("")    
     const[isValid , setisValid] = useState(false)
 
-    const userName = localStorage.getItem("name") ? localStorage.getItem("name") : "demo"
-    const userEmail = localStorage.getItem("email") ? localStorage.getItem("email") : "demo@gmail.com"
-    const userPhone = localStorage.getItem("phone") ? localStorage.getItem("name") : "123456789"
+   const[isError, setError] = useState(null)
+   const showList = true
+
 
 
     const handleClick = (e) => {
       e.preventDefault();
-      if(name === userName){
-        alert("login SUccessfull")
-      } else if(email === userEmail ) {
-        alert("login SUccessfull")
-      } else if(phone === userPhone){
-        alert("login SUccessfull")
+      // const data = {name , password};
+
+      const userData  = JSON.parse(localStorage.getItem("users")) || [];
+      const existuser = userData.find(
+        (user) => user.name === name && user.password === password
+        );
+        console.log(existuser)
+      if(existuser === undefined){
+        alert("invalid user")
+        console.log("invalid user")
+        setError("Invalid username or password");
+        setisValid(false)
+        return;
       }
-      
-      
-
-
-      let newData = [...value,singin]
-      setValue(newData)
-      setSingin("")
-
-
-
     };
    
+
+
   return (
 
     <div className={styles.container}>
@@ -64,14 +60,27 @@ const Singin = () => {
         <span className={styles.Orspan}>Or</span>
         </div>
      <TextField id="filled-basic" 
-     label="Phone,email, or username" 
+     label="Username or Email" 
      variant="filled" 
      style={{width:"45%" , m:3}}
-        onChange={(e) => setSingin(e.target.value)}
-        value={singin}
+          onChange={(e) => {
+            setName(e.target.value);
+          }}
+          
+        value={name}
         error={isValid}
         />
-     <button className={styles.btn}> <Link to= '/Password'>Next</Link></button>
+        <TextField id="filled-basic" 
+     label="Password" 
+     variant="filled" 
+     style={{width:"45%" , margin:15 , P:2}}
+          onChange={(e) => {
+            setpassword(e.target.value);
+          }}
+        value={password}
+        error={isValid}
+        />
+     <button className={styles.btn} onClick={handleClick}> <Link to= '/'>Next</Link></button>
      <button className={styles.btn}>Forgot password?</button>
      <br/>
      <p className={styles.footer}>Don't have a account?<Link to= '/singup'> sing Up</Link></p>

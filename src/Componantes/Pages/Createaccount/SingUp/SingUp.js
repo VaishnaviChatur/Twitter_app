@@ -1,6 +1,7 @@
 import React from 'react'
 import TwitterIcon from '@mui/icons-material/Twitter';
 import styles from './SingUp.module.css'
+
 import {FcGoogle} from "react-icons/fc"
 import {FaApple} from "react-icons/fa"
 import {GrClose} from "react-icons/gr"
