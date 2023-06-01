@@ -41,7 +41,7 @@ const Singin = () => {
         return
        
       } else {
-        navigate('/')
+        navigate('/home')
       }
     }
     

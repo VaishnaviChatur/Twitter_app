@@ -1,36 +1,13 @@
-// import React from 'react'
-// import {Link} from 'react-router-dom'
-// const Home = () => {
-//   return (
-//     <div>
-//     this is home page
-//     <Link to= '/singin'> sing In</Link>
-//     </div>
-//   )
-// }
 
-// export default Home
-
-// import LeftSideBar from "../../component/Leftsidebar";
-// import LiveTweet from "../../components/LiveTweet";
 
 import React, { useEffect } from "react";
-//import { useNavigate } from "react-router-dom";
-//import { useRecoilValue, useSetRecoilState } from "recoil";
-//import { authAtom } from "../../component/recoil/atom";
-
-// import RightSidebar from './RightSide/RightSidebar.jsx'
 import RightSidebar from './RightSide/RightSidebar'
 import styles from './Home.module.css'
 import LeftSide from './LeftSide/LeftSide'
-// import LeftSideBar from "./RightSide/WhatHappening;
 import Center from './Center/Center'
 import PostTweet from "./Center/PostTweet/PostTweet";
 import LiveTweet from "./Center/LiveTweet/LiveTweet";
-// import Tweet from "./Center/PostTweet/Tweet";
 
-
-// import LiveTweet from "./LiveTweet";
 function Home() {
   return (
   

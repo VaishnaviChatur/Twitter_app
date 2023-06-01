@@ -25,7 +25,7 @@ const SecondPage = () => {
         <p> Twitter uses this data to personalize your experience. This web
           browsing history will never be stored with your name, email, or phone
           number.</p>
-         <p><CheckBoxOutlineBlankIcon  style={{color: "#00ACEE", fontSize: "2em" }}/></p> 
+         {/* <p><CheckBoxOutlineBlankIcon  style={{color: "#00ACEE", fontSize: "2em" }}/></p>  */}
         </div>
         <br />
 
@@ -39,16 +39,10 @@ const SecondPage = () => {
         <br />
         <br />
         <div className={styles.pwd}>
-        {/* <TextField id="filled-basic" 
-     label="Password" 
-     variant="filled" 
-   
-        fullWidth
-        />
-         <Link>Forgot password?</Link> */}
+       
          </div>
     
-        <button className={styles.NextBtn}><Link to = '/singin' className={styles.subbtn}>Submit</Link></button>
+        <button className={styles.NextBtn}><Link to = '/' className={styles.subbtn}>Submit</Link></button>
       </div>
     </>
   );

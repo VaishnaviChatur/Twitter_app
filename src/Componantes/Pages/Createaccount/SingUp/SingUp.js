@@ -42,7 +42,7 @@ const SignUp = () => {
         <p>and <Link className={styles.blue}>Privacy Policy</Link>, including <Link className={styles.blue}>Cookie Use.</Link></p>
         </div>
         <div className={styles.footer}>
-        <p>Have an account already? <Link to= '/singin' className={styles.blue}> Login </Link></p>
+        <p>Have an account already? <Link to= '/' className={styles.blue}> Login </Link></p>
         </div>
         
     </div>

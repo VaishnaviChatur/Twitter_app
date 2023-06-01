@@ -13,7 +13,7 @@ export default function Profile() {
 
     // const Menues = ['Add an existing account', 'Log out @Demo1234']
     function LogOut(){
-        navigate("/singin")
+        navigate("/")
 
 
     }

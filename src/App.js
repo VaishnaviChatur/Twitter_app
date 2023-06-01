@@ -20,8 +20,8 @@ function App() {
      <BrowserRouter>
      <Provider store={store}>
      <Routes>
-      <Route path='/' element={<Home />} />
-          <Route path="singin" element={<SingIn />} />
+      <Route path='/home' element={<Home />} />
+          <Route path="/" element={<SingIn />} />
        
           
              
