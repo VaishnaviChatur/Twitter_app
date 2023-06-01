@@ -1,0 +1,37 @@
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    width: 100%;
+    margin-left: 30px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    /* max-height: 10vh; */
+    font-size: smaller;
+}
+.menu{
+    height: 20px;
+    width: 20px;
+}
+
+.menu:hover {
+    background-color: rgb(158, 158, 207);
+}
+.li{
+    list-style: none;
+    /* height: 20px;
+    width: 20px; */
+}
+.li:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+}
+.btn{
+    height: 45px;
+    width: 65px;
+    background-color: rgb(29,155,240);
+}

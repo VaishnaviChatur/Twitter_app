@@ -48,7 +48,7 @@ const SecondPage = () => {
          <Link>Forgot password?</Link> */}
          </div>
     
-        <button className={styles.NextBtn}><Link to = '/' className={styles.subbtn}>Submit</Link></button>
+        <button className={styles.NextBtn}><Link to = '/singin' className={styles.subbtn}>Submit</Link></button>
       </div>
     </>
   );

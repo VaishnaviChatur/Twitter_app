@@ -24,6 +24,10 @@ import RightSidebar from './RightSide/RightSidebar'
 import styles from './Home.module.css'
 import LeftSide from './LeftSide/LeftSide'
 // import LeftSideBar from "./RightSide/WhatHappening;
+import Center from './Center/Center'
+import PostTweet from "./Center/PostTweet/PostTweet";
+import LiveTweet from "./Center/LiveTweet/LiveTweet";
+// import Tweet from "./Center/PostTweet/Tweet";
 
 
 // import LiveTweet from "./LiveTweet";
@@ -37,7 +41,10 @@ function Home() {
         {/* <LeftSideBar/> */}
       </div>
       <div className={styles.TweetContainer}>
-        {/* <LiveTweet /> */}
+        <LiveTweet />
+        {/* <Tweet /> */}
+        <PostTweet/>
+        <Center />
         {/* <LiveTweet/> */}
       </div>
 

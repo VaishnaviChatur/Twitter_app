@@ -17,9 +17,9 @@ const PopoverIcon = ({ open, onClose, anchorEl, onNotInterestedClick }) => {
       }}
     >
       <Typography sx={{ p: 2 }}>
-        <Button variant="text" onClick={onNotInterestedClick}>Not Interested in this</Button>
+        <button variant="text" onClick={onNotInterestedClick}>Not Interested in this</button>
         <br></br>
-        <Button variant="text" onClick={onClose}>This is harmful or spammy</Button>
+        <button variant="text" onClick={onClose}>This is harmful or spammy</button>
       </Typography>
     </Popover>
   );

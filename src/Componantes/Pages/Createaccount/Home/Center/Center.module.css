@@ -1,0 +1,18 @@
+.container{
+    width: 20vh;
+    display: flex;
+    flex-direction: column;
+  
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
+}
+.img{
+    width: 100vh;
+   margin-left:50px ;
+   border-radius: 50px;
+}
+.like{
+    padding: 20px;
+    margin: 20px;
+}

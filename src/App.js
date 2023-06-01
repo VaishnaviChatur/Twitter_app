@@ -8,26 +8,31 @@ import  CreateAccount  from './Componantes/Pages/Createaccount/SingUpFirstPage/F
 import Home from './Componantes/Pages/Createaccount/Home/Home'
 import SecondPage from './Componantes/Pages/Createaccount/SingUp2ndPage/SecondPage';
 import {BrowserRouter , Routes, Route } from "react-router-dom";
+
 // import Center from "./Componantes/Pages/Createaccount/CenterPage/Center";
+// import Center from './Componantes/Pages/Createaccount/Home/Center/Center'
+
 
 function App() {
   return (
 
     <div>
-    {/* <Center /> */}
      <BrowserRouter>
      <Provider store={store}>
      <Routes>
       <Route path='/' element={<Home />} />
           <Route path="singin" element={<SingIn />} />
+       
           
-
+             
           <Route path="singup" element={<SingUp />} />
           <Route path="createaccount" element={<CreateAccount />} />
         <Route path="/secondpage" element={<SecondPage />} /> 
      </Routes>
      </Provider>
      </BrowserRouter> 
+     {/* <Center /> */}
+     
 
 
     </div>

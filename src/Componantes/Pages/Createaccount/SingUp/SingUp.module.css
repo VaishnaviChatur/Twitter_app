@@ -1,34 +1,27 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
 
-body{
-    background-color: gray;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    margin-top: 3em;  
-}
-
-.container{
-    width:40vw;
+.container {
+    width: 40vw;
     margin: auto;
     background-color: white;
     display: flex;
     flex-direction: column;
-    margin: 1rem;
+    margin-left: 30rem;
     align-items: center;
     border-radius: 15px;
     height: 85vh;
+    border: 2px solid grey;
+    margin-top: 3rem;
 }
 
-.box{
+.box {
     display: flex;
     flex-direction: row;
     width: 100%;
-    
 }
 
 .box .close{
