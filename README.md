@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Twitter-Clone
+This is a Twitter clone project that aims to replicate some of the basic functionalities of the Twitter platform. It provides a platform for users to post tweets, follow other users, and engage in conversations.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Initialisation
+We are going to do this project in React.
+<h1>Features of Twitter</h1>
+<h3><li>Add Feed: Users can create and post new feeds, similar to tweeting on Twitter.</li></h3>
+<h3><li>Like/Dislike: Users can like or dislike feeds to express their reaction.</li></h3>
+<h3><li>Trending Feed Section: The trending feed section displays the most popular and engaging feeds.</li></h3>
+<h3><li>User authentication and registration</li></h3>
+<h3><li>Following and unfollowing users</li></h3>
 
-In the project directory, you can run:
 
-### `npm start`
+# Dependencies
+<h1>The project utilizes the following dependencies:</h1>
+<h3><li>React: A JavaScript library for building user interfaces.</h3></li>
+<h3><li>Redux-Toolkit: A state management library for managing application state in React.</h3></li>
+<h3><li>Material UI: A popular UI component library for React, providing pre-designed and customizable components.</h3></li>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ <h1> Tech Stack </h1>
+ <ul>
+  <li>React JS</li>
+  <li>React Icons</li>
+  <li>Material UI</li>
+  <li>React Router</li>
+  <li>React Redux</li>
+  <li>Redux Toolkit</li>
+  <h1>Installation</h1>
+To install and run the application locally, follow these steps:
+<ul>
+<li>Clone this repository to your local machine</li>
+<li>Run npm install to install all dependencies</li>
+<li>Run npm start to start the development server</li>
+</ul>
+  <h1>Developer</h1>
+<ol>
 
-### `npm test`
+<li> vaishnavi Chatur <a href="https://github.com/VaishnaviChatur"> https://github.com/VaishnaviChatur</a></li>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ <h1>Deployment Link <a href="https://twitter-vaishnavichatur.netlify.app/">https://ashwinitwitterfinal-m3kc.vercel.app/</a> </h1>
+  <h1>Acknowledgment</h1>
+  We would like to acknowledge the valuable contributions of the open-source community and the various libraries and frameworks that have made the Twitter-clone possible. Their dedication and commitment have been instrumental in developing this powerful project management tool.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
